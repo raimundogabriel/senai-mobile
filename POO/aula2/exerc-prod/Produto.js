@@ -1,11 +1,10 @@
 export class Produto{
   #nome
-  #valor
-  #ano
+  static valor = 10
+  #ano = 1960
   #validade
-  constructor(nome,valor,ano,validade){
+  constructor(nome,ano,validade){
     this.#nome = nome;
-    this.#valor = valor;
     this.#ano = ano;
     this.#validade = validade;
   }
@@ -21,8 +20,10 @@ export class Produto{
   }
 
 
-  exibirProduto(){
-  return `O produto é ${this.#nome} de valor ${this.#valor} do ano ${this.#ano} de validade ${this.#validade}`
+  static exibirProduto(){
+    return `Mensagem padrão do produto: 
+    valor ${this.valor} |
+    ano `
   }
 }
 
