@@ -13,6 +13,10 @@ console.log(carro1.descricao());
 const moto1 = new Moto("Royal Enfiled", "Meteor", 28,350)
 console.log(moto1.descricao());
 console.log(moto1.ehAltaCilindrada());
+//errado o modelo e cc
+moto1.setModelo("Super Meteor")
+moto1.setCilindradas(650)
+console.log(moto1.descricao());
 
 const caminhao1 = new Caminhao("Scania","R 450",50,1000)
 console.log(caminhao1.descricao());
