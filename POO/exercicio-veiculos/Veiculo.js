@@ -8,6 +8,7 @@ export class Veiculo{
         this.#marca = marca;
         this.#modelo = modelo;
         this.#autonomiaKml = autonomiaKml;
+        Veiculo.totalCriados ++;
     }
 
     getMarca(){
@@ -42,5 +43,9 @@ export class Veiculo{
         console.log(`Marca: ${this.#marca}`);
         console.log(`Modelo: ${this.#modelo}`);
         console.log(`Autonomia KM/L: ${this.#autonomiaKml} kms`)
+    }
+
+    static quantosCriados(){
+        return Veiculo.totalCriados ;
     }
 }
